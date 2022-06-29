@@ -79,3 +79,8 @@
         box-shadow: 1px 1px 10px 1px rgb(193, 193, 193);
     }
 }
+@media screen and (max-width:1150px) {
+        .course-card{
+            width: 300px;
+        }
+}

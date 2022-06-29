@@ -119,4 +119,10 @@
   -webkit-box-shadow: 1px 1px 10px 1px #c1c1c1;
           box-shadow: 1px 1px 10px 1px #c1c1c1;
 }
+
+@media screen and (max-width: 1150px) {
+  .course-card {
+    width: 300px;
+  }
+}
 /*# sourceMappingURL=CourseCard.css.map */
