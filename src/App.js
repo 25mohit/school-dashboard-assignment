@@ -9,12 +9,18 @@ import { Students } from './component/students/Students';
 import { Exams, Home, Live, Notice, Notification, Results } from './component/home/Home';
 import { Profile } from './component/profile/Profile';
 import { Courses } from './component/courses/Courses'
+import { useState } from 'react';
+import { BsArrowDownRightSquareFill } from 'react-icons/bs'
 
 function App() {
+  const [showSidebar, setShowSidebar] = useState(false)
+
   return (
     <div className="App">
+      {!showSidebar && <div className="bars-icon-s"><BsArrowDownRightSquareFill id='arrow' onClick={() =>setShowSidebar(!showSidebar)}/></div>}
       <Router>
-        <div className='sidebar-app'><Sidebar /></div>
+      {showSidebar &&  <div className='sidebar-app'>
+          <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar}/></div> }
         <Routes>
           <Route path='/' exact element={<div className='home-app'><Home /></div>}/>
           <Route path='/app' exact element={<div className='home-app'><Home /></div>}/>

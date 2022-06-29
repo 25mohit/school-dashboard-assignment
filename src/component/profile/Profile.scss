@@ -1,6 +1,10 @@
 .profile{
     padding: 15px 20px;
     box-sizing: border-box;
+    margin: 20px;
+    height: 90vh;
+    border-radius: 10px;
+    border: 1px solid rgb(203, 203, 203);
     .profile-header{
         display: flex;
         align-items: center;
@@ -29,16 +33,25 @@
         }
     }
     .profile-info{
-        margin-top: 45px;
+        margin-top: 65px;
         .profile-row{
             display: flex;
-            margin: 10px 0;
+            margin: 20px 0;
             #fName{
                 margin-left: 15px;
                 text-transform: capitalize;
             }
             #fEmail{
                 margin-left: 15px;
+            }
+        }
+        .rules{
+            text-align: left;
+            margin-top: 40px;
+            li{
+                margin-left: 15px;
+                color: rgb(180, 180, 180);
+                line-height: 25px;
             }
         }
     }

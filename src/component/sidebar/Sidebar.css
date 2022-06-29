@@ -2,6 +2,26 @@
   -webkit-box-shadow: 2px 0 15px -2px #b2b2b2;
           box-shadow: 2px 0 15px -2px #b2b2b2;
   height: 100vh;
+  position: relative;
+}
+
+.sidebar-div .bars-icon {
+  top: 15px;
+  right: -16px;
+  position: absolute;
+}
+
+.sidebar-div .bars-icon #hide {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  color: #2CA4D8;
+}
+
+.sidebar-div .bars-icon #hide:hover {
+  cursor: pointer;
 }
 
 .sidebar-div .sidebar-container {
@@ -137,6 +157,9 @@
 }
 
 @media screen and (max-width: 1150px) {
+  .sidebar-div .bars-icon {
+    display: block;
+  }
   .sidebar-div .sidebar-container .head-div .logo-div {
     padding: 5px 8px;
   }

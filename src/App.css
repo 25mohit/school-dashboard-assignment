@@ -16,3 +16,17 @@ font-weight: 600;
 .App .home-app{
   flex: 4.5;
 }
+.App .bars-icon-s{
+  position: fixed;
+  top: 10%;
+  left: 8%;
+}
+.App .bars-icon-s #arrow{
+  font-size: 50px;
+  transform: rotate(-45deg)
+}
+.App .bars-icon-s #arrow:hover{
+  cursor: pointer;
+  color: goldenrod;
+  transition: 0.6s;
+}

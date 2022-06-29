@@ -2,6 +2,10 @@
   padding: 15px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 20px;
+  height: 90vh;
+  border-radius: 10px;
+  border: 1px solid #cbcbcb;
 }
 
 .profile .profile-header {
@@ -46,14 +50,14 @@
 }
 
 .profile .profile-info {
-  margin-top: 45px;
+  margin-top: 65px;
 }
 
 .profile .profile-info .profile-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .profile .profile-info .profile-row #fName {
@@ -63,5 +67,16 @@
 
 .profile .profile-info .profile-row #fEmail {
   margin-left: 15px;
+}
+
+.profile .profile-info .rules {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.profile .profile-info .rules li {
+  margin-left: 15px;
+  color: #b4b4b4;
+  line-height: 25px;
 }
 /*# sourceMappingURL=Profile.css.map */

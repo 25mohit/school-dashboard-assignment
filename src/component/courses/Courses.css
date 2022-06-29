@@ -2,6 +2,9 @@
   padding: 15px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #cbcbcb;
+  margin: 20px;
 }
 
 .courses .courses-header {

@@ -52,14 +52,23 @@
 
 .update-profile .update-profile-container .profile-up-form #lables {
   margin-bottom: 5px;
+  margin-top: 15px;
 }
 
-.update-profile .update-profile-container .profile-up-form .update-p-field {
+.update-profile .update-profile-container .profile-up-form .name-error, .update-profile .update-profile-container .profile-up-form .email-error, .update-profile .update-profile-container .profile-up-form .mobile-error, .update-profile .update-profile-container .profile-up-form .city-error {
+  color: red;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}
+
+.update-profile .update-profile-container .profile-up-form .update-p-field-n, .update-profile .update-profile-container .profile-up-form .update-p-field-c, .update-profile .update-profile-container .profile-up-form .update-p-field-m, .update-profile .update-profile-container .profile-up-form .update-p-field-mail {
   border: 1px solid #b5b5b5;
   outline: none;
   padding: 7px;
   border-radius: 8px;
-  margin-bottom: 15px;
 }
 
 .update-profile .update-profile-container .profile-up-form .update-p-footer {
@@ -108,5 +117,33 @@
   color: #23A4D8;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+}
+
+.update-p-field-n:invalid[focused="true"] ~ .name-error {
+  display: block;
+}
+
+.update-p-field-mail:invalid[focused="true"] ~ .email-error {
+  display: block;
+}
+
+.update-p-field-m:invalid[focused="true"] ~ .mobile-error {
+  display: block;
+}
+
+.update-p-field-c:invalid[focused="true"] ~ .city-error {
+  display: block;
+}
+
+@media screen and (max-width: 1150px) {
+  .update-profile .update-profile-container {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .update-profile .update-profile-container {
+    width: 95%;
+  }
 }
 /*# sourceMappingURL=UpdateProfile.css.map */

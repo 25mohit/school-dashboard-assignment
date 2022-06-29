@@ -1,7 +1,22 @@
 .sidebar-div{
     box-shadow: 2px 0 15px -2px rgb(178, 178, 178);
     height: 100vh;
-    // background-color: red;
+    position: relative;
+    .bars-icon{
+        top: 15px;
+        right: -16px;
+        position: absolute;
+        #hide{
+            transform: rotate(135deg);
+            padding: 0;
+            margin: 0;
+            font-size: 30px;
+            color: #2CA4D8;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
     .sidebar-container{
         height: 100%;
         position: relative;
@@ -94,6 +109,9 @@
 }
 @media screen and (max-width:1150px) {
     .sidebar-div{
+        .bars-icon{
+            display: block;
+        }
         .sidebar-container{
             .head-div{
                 .logo-div{

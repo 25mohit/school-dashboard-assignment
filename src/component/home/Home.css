@@ -14,6 +14,19 @@
           box-sizing: border-box;
 }
 
+.dummy-page .container {
+  margin-top: 40px;
+}
+
+.dummy-page .container .head-home {
+  font-size: 45px;
+}
+
+.dummy-page .container .rules {
+  margin-top: 20px;
+  text-align: left;
+}
+
 .dummy-page .dummy-text {
   font-size: 6em;
   color: #2CA4D8;

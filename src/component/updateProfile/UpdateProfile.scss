@@ -31,13 +31,21 @@
             flex-direction: column;
             #lables{
                 margin-bottom: 5px;
+                margin-top: 15px;
             }
-                .update-p-field{
+            .name-error,.email-error,.mobile-error,.city-error{
+                color: red;
+                font-weight: 600;
+                font-style: italic;
+                font-size: 14px;
+                margin-top: 5px;
+                display: none;
+            }
+                .update-p-field-n,.update-p-field-c,.update-p-field-m,.update-p-field-mail{
                     border: 1px solid rgb(181, 181, 181);
                     outline: none;
                     padding: 7px;
                     border-radius: 8px;
-                    margin-bottom: 15px;
                 }
                 .update-p-footer{
                     text-align: right;
@@ -81,3 +89,32 @@
         }
     }
 }
+// .update-p-field-n:invalid[focused="true] ~ .error{
+//     display:block;
+// }
+.update-p-field-n:invalid[focused="true"] ~ .name-error{
+    display: block;
+}
+.update-p-field-mail:invalid[focused="true"] ~ .email-error{
+    display: block;
+}
+.update-p-field-m:invalid[focused="true"] ~ .mobile-error{
+    display: block;
+}
+.update-p-field-c:invalid[focused="true"] ~ .city-error{
+    display: block;
+}
+@media screen and(max-width:1150px) {
+    .update-profile{
+            .update-profile-container{
+                width: 60vw;
+            }
+    }
+}  
+@media screen and(max-width:500px) {
+    .update-profile{
+            .update-profile-container{
+                width: 95%;
+            }
+    }
+}  

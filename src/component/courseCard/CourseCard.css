@@ -27,6 +27,8 @@
 }
 
 .course-card .course-header .course-name {
+  width: 50%;
+  word-break: break-all;
   text-transform: capitalize;
 }
 
@@ -51,6 +53,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.course-card .course-info .center .left {
+  width: 70%;
+  word-break: break-all;
 }
 
 .course-card .course-info .center .left .course-creater {

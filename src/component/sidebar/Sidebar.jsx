@@ -4,12 +4,14 @@ import { SidebarMenu } from '../sidebarMenu/SidebarMenu'
 import {Link} from 'react-router-dom'
 import { BsBookmarkStar } from 'react-icons/bs'
 import { FaUserAlt } from 'react-icons/fa'
+import { BsArrowDownRightSquareFill } from 'react-icons/bs'
 import { useSelector } from 'react-redux'
 
-export const Sidebar = () => {
+export const Sidebar = ({showSidebar,setShowSidebar}) => {
   const userInfo = useSelector(state => state.profile)
   return (
     <div className='sidebar-div'>
+      <div className="bars-icon" ><BsArrowDownRightSquareFill id='hide'  onClick={() =>setShowSidebar(!showSidebar)} /></div>
             <div className="sidebar-container">
                     <div className="head-div">
                         <div className="logo-div">
@@ -24,13 +26,14 @@ export const Sidebar = () => {
                         />)}
                     </div>
                     <div className="sidebar-footer">
+                      {userInfo && 
                           <div className="user-card">
                             <FaUserAlt id='user-icon'/>
                             <div className="email">
                               <p className="u-name">{userInfo.fName}</p>
                               <p className="u-email">{userInfo.fEmail}</p>
                             </div>
-                          </div>
+                          </div>}
                           <Link to='profile'><button className="profile-bt">PROFILE</button></Link>
                     </div>  
             </div>
