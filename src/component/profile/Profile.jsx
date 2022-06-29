@@ -11,6 +11,7 @@ export const Profile = () => {
     return(
         <div className="profile">
                 <div className="profile-header">
+                    {/* <p></p> */}
                         <h1 className="user-name">Update Profile</h1>
                         <button className="add-bt" onClick={() => setShowEditProfile(true)}><BsPlusLg id='bt-icon'/>Update Profile</button>
                 </div>
