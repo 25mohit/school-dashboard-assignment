@@ -25,6 +25,15 @@ const reducer = (state = initialState, action) => {
                     state.students[studentIndex].sClass=action.payload.sClass
                     state.students[studentIndex].sScore=action.payload.sScore
                 }
+        case "EDIT_COURSE":
+            const courseIndex = state.courses.findIndex(course => course.id == action.payload.id)
+            if(courseIndex>=0){
+                state.courses[courseIndex].cTitle=action.payload.cTitle
+                state.courses[courseIndex].cDescription=action.payload.cDescription
+                state.courses[courseIndex].cfName=action.payload.cfName
+                state.courses[courseIndex].csDate=action.payload.csDate
+                state.courses[courseIndex].ceDate=action.payload.ceDate
+            }
         case "UPDATE_PROFILE":
             return{
                 ...state,

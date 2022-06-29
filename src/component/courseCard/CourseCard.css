@@ -72,6 +72,10 @@
 
 .course-card .course-info .center .right {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: orange;
 }
 
 .course-card .course-info .center .right #trach-icon {

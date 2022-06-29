@@ -6,6 +6,7 @@
         top: 15px;
         right: -16px;
         position: absolute;
+        z-index: 1000;
         #hide{
             transform: rotate(135deg);
             padding: 0;
@@ -109,10 +110,9 @@
 }
 @media screen and (max-width:1150px) {
     .sidebar-div{
-        .bars-icon{
-            display: block;
-        }
         .sidebar-container{
+            height: 100%;
+            width: 160px;
             .head-div{
                 .logo-div{
                     padding: 5px 8px;
@@ -125,13 +125,13 @@
                 }
             }
             .sidebar-footer{
-                position:inherit;
-                width: fit-content;
                 bottom: 0;
-                .user-detail{
-                    .user-email{
-                        font-size: 12px;
-                        word-wrap: break-word;
+                .user-card{
+                    .email{
+                        .u-email,.u-name{
+                            word-break: break-all;
+                            font-size: 10px;
+                        }
                     }
                     .profile-bt{
                         padding: 3px;

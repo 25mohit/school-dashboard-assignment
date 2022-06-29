@@ -16,6 +16,7 @@
 
 .dummy-page .container {
   margin-top: 40px;
+  padding-bottom: 25px;
 }
 
 .dummy-page .container .head-home {
@@ -25,6 +26,23 @@
 .dummy-page .container .rules {
   margin-top: 20px;
   text-align: left;
+}
+
+.dummy-page .container .rules-1 {
+  text-align: left;
+}
+
+.dummy-page .container .rules-1 #arrow-icon-m {
+  margin: 0 10px;
+  margin-top: 5px;
+  color: orange;
+  font-size: 25px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.dummy-page .container .rules-1 #span-bold {
+  font-weight: bold;
 }
 
 .dummy-page .dummy-text {

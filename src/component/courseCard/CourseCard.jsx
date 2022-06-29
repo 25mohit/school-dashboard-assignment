@@ -1,6 +1,7 @@
 import './CourseCard.css'
 import {BsTrash} from 'react-icons/bs'
 import { useDispatch } from 'react-redux/es/exports'
+import { useState } from 'react'
 
 export const CourseCard = ({ data }) => {
     const dispatch = useDispatch()
@@ -11,7 +12,6 @@ export const CourseCard = ({ data }) => {
             payload:id
         })
     }
-
     return(
         <div className="course-card">
             <div className="course-header">
@@ -25,7 +25,7 @@ export const CourseCard = ({ data }) => {
                         <p className="course-creater">Description : <span>{ data.cDescription }</span></p>
                     </div>
                     <div className="right">
-                        <BsTrash id='trach-icon' onClick={() => {removeCourse(data.id)}}/>
+                         <BsTrash id='trach-icon' onClick={() => {removeCourse(data.id)}}/>
                     </div>
                 </div>
                     <div className="course-footer">

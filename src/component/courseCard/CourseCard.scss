@@ -44,6 +44,8 @@
             }
             .right{
                 position: relative;
+                display: flex;
+                background-color: orange;
                 #trach-icon{
                     position: absolute;
                     bottom: 0;

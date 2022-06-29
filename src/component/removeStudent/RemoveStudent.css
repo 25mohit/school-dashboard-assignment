@@ -8,6 +8,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   top: 0%;
+  z-index: 5000;
   left: 0;
   width: 100vw;
   height: 100vh;

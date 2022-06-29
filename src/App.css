@@ -11,22 +11,29 @@ font-weight: 600;
 }
 .App .sidebar-app{
     flex: 1;
-    height: 100vh;
+    height: 100%;
 }
 .App .home-app{
   flex: 4.5;
 }
 .App .bars-icon-s{
   position: fixed;
-  top: 10%;
-  left: 8%;
+  top: 20%;
+  left: 2%;
 }
 .App .bars-icon-s #arrow{
   font-size: 50px;
+  color: orange;
   transform: rotate(-45deg)
 }
 .App .bars-icon-s #arrow:hover{
   cursor: pointer;
-  color: goldenrod;
+  color: #2CA4D8;
   transition: 0.6s;
 }
+/* @media screen and (max-width:1150px) {
+.App.sidebar-app{
+  background-color: olive;
+  flex: 2;
+}
+} */

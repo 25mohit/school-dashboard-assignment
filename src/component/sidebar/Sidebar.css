@@ -9,6 +9,7 @@
   top: 15px;
   right: -16px;
   position: absolute;
+  z-index: 1000;
 }
 
 .sidebar-div .bars-icon #hide {
@@ -157,8 +158,9 @@
 }
 
 @media screen and (max-width: 1150px) {
-  .sidebar-div .bars-icon {
-    display: block;
+  .sidebar-div .sidebar-container {
+    height: 100%;
+    width: 160px;
   }
   .sidebar-div .sidebar-container .head-div .logo-div {
     padding: 5px 8px;
@@ -170,17 +172,13 @@
     font-size: 14px;
   }
   .sidebar-div .sidebar-container .sidebar-footer {
-    position: inherit;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     bottom: 0;
   }
-  .sidebar-div .sidebar-container .sidebar-footer .user-detail .user-email {
-    font-size: 12px;
-    word-wrap: break-word;
+  .sidebar-div .sidebar-container .sidebar-footer .user-card .email .u-email, .sidebar-div .sidebar-container .sidebar-footer .user-card .email .u-name {
+    word-break: break-all;
+    font-size: 10px;
   }
-  .sidebar-div .sidebar-container .sidebar-footer .user-detail .profile-bt {
+  .sidebar-div .sidebar-container .sidebar-footer .user-card .profile-bt {
     padding: 3px;
     width: -webkit-fit-content;
     width: -moz-fit-content;

@@ -3,7 +3,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 20px;
-  height: 90vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   border-radius: 10px;
   border: 1px solid #cbcbcb;
 }

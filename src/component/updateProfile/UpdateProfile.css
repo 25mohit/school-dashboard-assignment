@@ -3,6 +3,7 @@
   width: 100vw;
   height: 100vh;
   top: 0;
+  z-index: 5000;
   left: 0;
   padding-top: 50px;
   display: -webkit-box;
@@ -74,7 +75,6 @@
 .update-profile .update-profile-container .profile-up-form .update-p-footer {
   text-align: right;
   margin-top: 10px;
-  border-top: 1px solid #dadada;
   padding-top: 20px;
 }
 

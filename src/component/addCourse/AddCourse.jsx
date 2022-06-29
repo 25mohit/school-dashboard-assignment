@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import './AddCourse.css'
 
@@ -17,7 +17,17 @@ export const AddCourse = ({setShowCourse}) => {
     const dispatch = useDispatch()
     const nDate = new Date()
     const fullDate = `${nDate.getDate()}-${nDate.getMonth()+1}-${nDate.getFullYear()}`
-
+    const keyPressListner = (e) => {
+        if(e.keyCode===27){
+            setShowCourse(false)
+        }
+    }
+    useEffect(() => {
+        document.addEventListener('keydown', keyPressListner)
+        return() => {
+            document.removeEventListener('keydown', keyPressListner)
+        }
+    },[])  
     const createCourse = (e) => {
         e.preventDefault()
         if(cTitle&&cDescription&&cfName&&csDate&&ceDate){

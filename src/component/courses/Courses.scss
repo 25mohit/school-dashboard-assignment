@@ -1,7 +1,6 @@
 .courses{
     padding: 15px 20px;
     box-sizing: border-box;
-    
     border-radius: 10px;
     border: 1px solid rgb(203, 203, 203);
     margin: 20px;
@@ -33,9 +32,10 @@
     }
     .courses-info{
         display: flex;
-        justify-content: center;
+        // justify-content: center;
         flex-wrap: wrap;
-        height: 85vh;
+        height: fit-content;
+        max-height: 85vh;
         overflow: auto;
     }
 }
