@@ -1,0 +1,135 @@
+.students-table {
+  border-radius: 10px;
+  border: 1px solid #cecdcd;
+  height: 80vh;
+  overflow: auto;
+}
+
+.students-table table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.students-table table #table-head {
+  text-align: left;
+  background-color: #F1F4F8;
+}
+
+.students-table table #table-head :nth-child(1) {
+  text-align: center;
+  width: 7%;
+}
+
+.students-table table #table-head :nth-child(2) {
+  width: 30%;
+}
+
+.students-table table #table-head :nth-child(6) {
+  width: 20%;
+}
+
+.students-table table #table-head th {
+  text-align: left;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #242424;
+}
+
+.students-table table .map-tr {
+  margin: 2px;
+  text-align: left;
+  border-bottom: 1px solid #dcdddf;
+}
+
+.students-table table .map-tr :nth-child(1) {
+  text-align: center;
+}
+
+.students-table table .map-tr :nth-child(6) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.students-table table .map-tr td {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: left;
+  text-align: left;
+}
+
+.students-table table .map-tr .table-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.students-table table .map-tr .table-icons #Average {
+  font-weight: bold;
+  color: #00a8ea;
+}
+
+.students-table table .map-tr .table-icons #Excellent {
+  font-weight: bold;
+  color: green;
+}
+
+.students-table table .map-tr .table-icons #Poor {
+  font-weight: bold;
+  color: red;
+}
+
+.students-table table .map-tr .table-icons .icons {
+  margin-left: 20px;
+  gap: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.students-table table .map-tr .table-icons .icons .table-icon {
+  color: #00a8ea;
+  display: none;
+}
+
+.students-table table .map-tr:hover {
+  cursor: pointer;
+  background-color: #F1F4F8;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.students-table table .map-tr:hover .icons .table-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.students-table table .map-tr .status {
+  font-weight: bold;
+  padding: 3px 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 15px;
+  border-radius: 15px;
+  color: white;
+}
+
+.students-table table .map-tr #Passed {
+  background-color: #00b000;
+}
+
+.students-table table .map-tr #Fail {
+  background-color: red;
+}
+/*# sourceMappingURL=StudentTable.css.map */

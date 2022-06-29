@@ -1,0 +1,67 @@
+.profile {
+  padding: 15px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.profile .profile-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile .profile-header .user-name {
+  font-size: 20px;
+  color: #242424;
+  font-weight: 600;
+}
+
+.profile .profile-header .add-bt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #23A4D8;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.profile .profile-header .add-bt #bt-icon {
+  margin-right: 5px;
+}
+
+.profile .profile-header .add-bt:hover {
+  cursor: pointer;
+}
+
+.profile .profile-info {
+  margin-top: 45px;
+}
+
+.profile .profile-info .profile-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+}
+
+.profile .profile-info .profile-row #fName {
+  margin-left: 15px;
+  text-transform: capitalize;
+}
+
+.profile .profile-info .profile-row #fEmail {
+  margin-left: 15px;
+}
+/*# sourceMappingURL=Profile.css.map */

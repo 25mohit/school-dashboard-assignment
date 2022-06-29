@@ -1,0 +1,107 @@
+.remove-student {
+  position: fixed;
+  background-color: rgba(32, 32, 32, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.remove-student .remove-student-container {
+  background-color: white;
+  width: 30%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: left;
+  border-radius: 20px;
+  text-align: left;
+  padding: 20px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.remove-student .remove-student-container .header-remove-student .remove-heading {
+  text-align: left;
+  color: #242424;
+  font-weight: 600;
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+
+.remove-student .remove-student-container .content-remove-student {
+  padding: 25px 0;
+  text-align: left;
+  border-bottom: 1px solid #dadada;
+  border-top: 1px solid #dadada;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.remove-student .remove-student-container .content-remove-student .heading-content {
+  text-align: left;
+  color: #242424;
+}
+
+.remove-student .remove-student-container .content-remove-student span {
+  text-align: left;
+  color: gray;
+  margin: 10px 0;
+  margin-top: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.remove-student .remove-student-container .content-remove-student .sName-delete {
+  color: #242424;
+  font-weight: 600;
+}
+
+.remove-student .remove-student-container .delete-student-footer {
+  text-align: right;
+}
+
+.remove-student .remove-student-container .delete-student-footer button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.remove-student .remove-student-container .delete-student-footer button:hover {
+  cursor: pointer;
+}
+
+.remove-student .remove-student-container .delete-student-footer #cancel-bt-delete {
+  border: 2px solid #23A4D8;
+  background-color: white;
+  color: #23A4D8;
+}
+
+.remove-student .remove-student-container .delete-student-footer #delete-bt-delete {
+  border: 2px solid red;
+  background-color: red;
+  color: white;
+}
+
+@media screen and (max-width: 880px) {
+  .remove-student .remove-student-container {
+    width: 70vw;
+  }
+}
+/*# sourceMappingURL=RemoveStudent.css.map */

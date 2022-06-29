@@ -1,0 +1,83 @@
+.update-profile{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.7);
+    align-content: center;
+    .update-profile-container{
+        width: 30%;
+        height: fit-content;
+        border-radius: 20px;
+        background-color: white;
+        text-align: left;
+        padding: 20px 25px;
+        box-sizing: border-box;
+        .profile-head{
+            border-bottom: 1px solid rgb(218, 218, 218);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            .p-update-title{
+                color: #242424;
+                font-weight: 600;
+            }
+        }
+        .profile-up-form{
+            display: flex;
+            flex-direction: column;
+            #lables{
+                margin-bottom: 5px;
+            }
+                .update-p-field{
+                    border: 1px solid rgb(181, 181, 181);
+                    outline: none;
+                    padding: 7px;
+                    border-radius: 8px;
+                    margin-bottom: 15px;
+                }
+                .update-p-footer{
+                    text-align: right;
+                    margin-top: 10px;
+                    border-top: 1px solid rgb(218, 218, 218);
+                    padding-top: 20px;
+                    button{
+                        margin: 0 5px;
+                        padding: 5px 10px;
+                        border-radius: 8px;
+                        font-weight: bold;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    .p-cancel-bt{
+                        border: 2px solid #23A4D8;
+                        background-color: white;
+                        color: #23A4D8;
+                        &:hover{
+                            cursor: pointer;
+                            border: 2px solid red;
+                            background-color: red;
+                            color: white;
+                            transition: 0.6s;
+                        }
+                    }
+                    .p-submit-bt{
+                        border: 2px solid #23A4D8;
+                        background-color: #23A4D8;
+                        color: white;
+                        &:hover{
+                            cursor: pointer;
+                            border: 2px solid #23A4D8;
+                            background-color: white;
+                            color: #23A4D8;
+                            transition: 0.6s;
+                        }
+                    }
+                }
+        }
+    }
+}

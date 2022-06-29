@@ -1,0 +1,204 @@
+.add-students-div {
+  position: fixed;
+  background-color: rgba(32, 32, 32, 0.7);
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.add-students-div .add-student-container {
+  width: 30%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  background-color: white;
+  text-align: left;
+  padding: 20px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.add-students-div .add-student-container .heading-div {
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 10px;
+}
+
+.add-students-div .add-student-container .heading-div .add-heading {
+  color: #242424;
+  font-weight: 600;
+}
+
+.add-students-div .add-student-container .add-student-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.add-students-div .add-student-container .add-student-form label {
+  text-align: left;
+  color: gray;
+  margin: 10px 0;
+  margin-top: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.add-students-div .add-student-container .add-student-form .input-field-add, .add-students-div .add-student-container .add-student-form .input-field-cls-add, .add-students-div .add-student-container .add-student-form .input-field-sco-add {
+  border: 1px solid #b5b5b5;
+  outline: none;
+  padding: 7px;
+  border-radius: 8px;
+}
+
+.add-students-div .add-student-container .add-student-form .error, .add-students-div .add-student-container .add-student-form .error-class, .add-students-div .add-student-container .add-student-form .error-score {
+  display: none;
+  font-weight: 500;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  color: red;
+}
+
+.add-students-div .add-student-container .add-student-form .default-text {
+  font-weight: 500;
+  font-style: italic;
+  color: gray;
+}
+
+.add-students-div .add-student-container .add-student-form .result-status {
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2px 10px;
+}
+
+.add-students-div .add-student-container .add-student-form .result-status:hover {
+  cursor: pointer;
+}
+
+.add-students-div .add-student-container .add-student-form .empty-dash {
+  font-size: 17px;
+  font-weight: 500;
+  color: gray;
+}
+
+.add-students-div .add-student-container .add-student-form #pass {
+  background: #01ba01;
+}
+
+.add-students-div .add-student-container .add-student-form #failed {
+  background: red;
+}
+
+.add-students-div .add-student-container .add-student-form #por {
+  color: red;
+}
+
+.add-students-div .add-student-container .add-student-form #avg {
+  color: #23A4D8;
+}
+
+.add-students-div .add-student-container .add-student-form #exc {
+  color: #01ba01;
+}
+
+.add-students-div .add-student-container .add-student-form .grade-text {
+  font-weight: bold;
+}
+
+.add-students-div .add-student-container .add-student-form .grade-text:hover {
+  cursor: pointer;
+}
+
+.add-students-div .add-student-container .add-student-form .form-footer {
+  text-align: right;
+  border-top: 1px solid #dadada;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.add-students-div .add-student-container .add-student-form .form-footer button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.add-students-div .add-student-container .add-student-form .form-footer button:hover {
+  cursor: pointer;
+}
+
+.add-students-div .add-student-container .add-student-form .form-footer .cancel-bt {
+  border: 2px solid #23A4D8;
+  background-color: white;
+  color: #23A4D8;
+}
+
+.add-students-div .add-student-container .add-student-form .form-footer .cancel-bt:hover {
+  cursor: pointer;
+  border: 2px solid red;
+  background-color: red;
+  color: white;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.add-students-div .add-student-container .add-student-form .form-footer .submit-bt {
+  border: 2px solid #23A4D8;
+  background-color: #23A4D8;
+  color: white;
+}
+
+.add-students-div .add-student-container .add-student-form .form-footer .submit-bt:hover {
+  cursor: pointer;
+  border: 2px solid #23A4D8;
+  background-color: white;
+  color: #23A4D8;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.input-field-add:invalid[focused="true"] {
+  border: none;
+}
+
+.input-field-add:invalid[focused="true"] ~ .error {
+  display: block;
+}
+
+.input-field-cls-add:invalid[focused="true"] ~ .error-class {
+  display: block;
+}
+
+.input-field-sco-add:invalid[focused="true"] ~ .error-score {
+  display: block;
+}
+
+@media screen and (max-width: 1150px) {
+  .add-students-div .add-student-container {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .add-students-div .add-student-container {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=AddStudents.css.map */

@@ -1,0 +1,168 @@
+.sidebar-div {
+  -webkit-box-shadow: 2px 0 15px -2px #b2b2b2;
+          box-shadow: 2px 0 15px -2px #b2b2b2;
+  height: 100vh;
+}
+
+.sidebar-div .sidebar-container {
+  height: 100%;
+  position: relative;
+}
+
+.sidebar-div .sidebar-container .head-div {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.sidebar-div .sidebar-container .head-div .logo-div {
+  background: #FFBF3F;
+  padding: 7px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidebar-div .sidebar-container .head-div .logo-div #main-logo {
+  color: #2b2b2b;
+  font-size: 25px;
+}
+
+.sidebar-div .sidebar-container .head-div .logo-text {
+  font-family: 'Passion One', cursive;
+  color: #2CA4D8;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.sidebar-div .sidebar-container .sidebar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar-div .sidebar-container .sidebar-footer {
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  bottom: 0;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+}
+
+.sidebar-div .sidebar-container .sidebar-footer .user-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sidebar-div .sidebar-container .sidebar-footer .user-card #user-icon {
+  font-size: 25px;
+  margin-right: 5px;
+  color: #c4c4c4;
+}
+
+.sidebar-div .sidebar-container .sidebar-footer .user-card .email .u-name {
+  font-size: 14px;
+  margin-bottom: 1px;
+}
+
+.sidebar-div .sidebar-container .sidebar-footer .user-card .email .u-email {
+  font-size: 12px;
+}
+
+.sidebar-div .sidebar-container .sidebar-footer a {
+  text-decoration: none;
+}
+
+.sidebar-div .sidebar-container .sidebar-footer a .profile-bt {
+  color: #00a8ea;
+  border: 2px solid #00a8ea;
+  background-color: white;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  padding: 8px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.sidebar-div .sidebar-container .sidebar-footer a .profile-bt:hover {
+  cursor: pointer;
+  background-color: #00a8ea;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  color: white;
+}
+
+@media screen and (max-width: 1150px) {
+  .sidebar-div .sidebar-container .head-div .logo-div {
+    padding: 5px 8px;
+  }
+  .sidebar-div .sidebar-container .head-div .logo-div #main-logo {
+    font-size: 15px;
+  }
+  .sidebar-div .sidebar-container .head-div .logo-text {
+    font-size: 14px;
+  }
+  .sidebar-div .sidebar-container .sidebar-footer {
+    position: inherit;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    bottom: 0;
+  }
+  .sidebar-div .sidebar-container .sidebar-footer .user-detail .user-email {
+    font-size: 12px;
+    word-wrap: break-word;
+  }
+  .sidebar-div .sidebar-container .sidebar-footer .user-detail .profile-bt {
+    padding: 3px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=Sidebar.css.map */

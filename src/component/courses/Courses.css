@@ -1,0 +1,60 @@
+.courses {
+  padding: 15px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.courses .courses-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.courses .courses-header .course-title {
+  color: #242424;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.courses .courses-header .add-bt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #23A4D8;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.courses .courses-header .add-bt #bt-icon {
+  margin-right: 5px;
+}
+
+.courses .courses-header .add-bt:hover {
+  cursor: pointer;
+}
+
+.courses .courses-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 85vh;
+  overflow: auto;
+}
+/*# sourceMappingURL=Courses.css.map */

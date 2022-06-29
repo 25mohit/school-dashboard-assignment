@@ -1,0 +1,56 @@
+.students-div {
+  height: 100vh;
+  padding: 30px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.students-div .student-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.students-div .student-head .student-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: #242424;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.students-div .student-head .add-bt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #23A4D8;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.students-div .student-head .add-bt #bt-icon {
+  margin-right: 5px;
+}
+
+.students-div .student-head .add-bt:hover {
+  cursor: pointer;
+}
+
+.students-div .students-data {
+  padding: 20px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=Students.css.map */

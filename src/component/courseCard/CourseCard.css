@@ -1,0 +1,111 @@
+.course-card {
+  background-color: #efefef;
+  margin: 10px;
+  width: 450px;
+  border-radius: 5px;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.course-card .course-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.course-card .course-header .course-name {
+  text-transform: capitalize;
+}
+
+.course-card .course-header .create-date {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.course-card .course-info {
+  text-align: left;
+  padding: 15px 0;
+}
+
+.course-card .course-info .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.course-card .course-info .center .left .course-creater {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.course-card .course-info .center .left .course-creater span {
+  font-weight: bold;
+}
+
+.course-card .course-info .center .right {
+  position: relative;
+}
+
+.course-card .course-info .center .right #trach-icon {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+.course-card .course-info .center .right #trach-icon:hover {
+  cursor: pointer;
+  color: red;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.course-card .course-info .course-footer {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 15px;
+}
+
+.course-card .course-info .course-footer .c-start {
+  color: #00a8ea;
+  font-weight: bold;
+}
+
+.course-card .course-info .course-footer .c-end {
+  color: red;
+  font-weight: bold;
+}
+
+.course-card:hover {
+  cursor: pointer;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-box-shadow: 1px 1px 10px 1px #c1c1c1;
+          box-shadow: 1px 1px 10px 1px #c1c1c1;
+}
+/*# sourceMappingURL=CourseCard.css.map */

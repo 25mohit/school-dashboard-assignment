@@ -1,0 +1,41 @@
+.students-div{
+    height: 100vh;
+    padding: 30px 20px;
+    box-sizing: border-box;
+        .student-head{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                .student-heading{
+                    font-family: 'Montserrat', sans-serif;
+                    color: #242424;
+                    font-weight: 700;
+                    line-height: 24px;
+                    font-size: 20px;
+                }
+                .add-bt{
+                    display: flex;
+                    align-items: center;
+                    background: #23A4D8;
+                    border: none;
+                    color: white;
+                    font-weight: bold;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    #bt-icon{
+                        // font-size: large;
+                        margin-right: 5px;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+            .students-data{
+                // background-color: red;
+                padding: 20px 0;
+                box-sizing: border-box;
+            }
+            .footer{
+            }
+}

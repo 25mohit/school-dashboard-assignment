@@ -1,0 +1,112 @@
+.add-course {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.add-course .add-course-container {
+  width: 30%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  background-color: white;
+  text-align: left;
+  padding: 20px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.add-course .add-course-container .courses-head {
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 10px;
+}
+
+.add-course .add-course-container .courses-head .courses-title {
+  color: #242424;
+  font-weight: 600;
+}
+
+.add-course .add-course-container .course-form {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.add-course .add-course-container .course-form #course-lable {
+  margin-bottom: 5px;
+}
+
+.add-course .add-course-container .course-form #course-fields {
+  border: 1px solid #b5b5b5;
+  outline: none;
+  padding: 7px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.add-course .add-course-container .course-footer {
+  text-align: right;
+  margin-top: 10px;
+  border-top: 1px solid #dadada;
+  padding-top: 20px;
+}
+
+.add-course .add-course-container .course-footer button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.add-course .add-course-container .course-footer button:hover {
+  cursor: pointer;
+}
+
+.add-course .add-course-container .course-footer .p-cancel-bt {
+  border: 2px solid #23A4D8;
+  background-color: white;
+  color: #23A4D8;
+}
+
+.add-course .add-course-container .course-footer .p-cancel-bt:hover {
+  cursor: pointer;
+  border: 2px solid red;
+  background-color: red;
+  color: white;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.add-course .add-course-container .course-footer .p-submit-bt {
+  border: 2px solid #23A4D8;
+  background-color: #23A4D8;
+  color: white;
+}
+
+.add-course .add-course-container .course-footer .p-submit-bt:hover {
+  cursor: pointer;
+  border: 2px solid #23A4D8;
+  background-color: white;
+  color: #23A4D8;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+/*# sourceMappingURL=AddCourse.css.map */

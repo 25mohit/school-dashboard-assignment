@@ -1,0 +1,41 @@
+.sidebar-menu-items{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 80%;
+    
+        .sidebar-menu-icon{
+            margin-right: 10px;
+            padding: 0;
+            color: #A8B4B9;
+            &:hover{
+                color: skyblue;
+                cursor: pointer;
+            }
+        }
+        a{
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            margin-left: 84px;
+            color: #242424;
+            font-weight: 500;
+            line-height: 18px;
+        }
+        &:hover{
+            background-color: rgb(216, 244, 255);
+            transition: 0.6s;
+            height: 50%;
+            border-radius: 15px;
+        }
+        
+}
+@media screen and (max-width:1150px) {
+    .sidebar-menu-items{
+        a{
+            word-wrap: break-word;
+            font-size: 12px;
+            width: fit-content;
+        }
+    }
+}

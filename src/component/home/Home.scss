@@ -1,0 +1,19 @@
+.dummy-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    .dummy-text{
+        font-size: 6em;
+        color: #2CA4D8;
+    }
+}
+@media screen and (max-width:1000px) {
+    .dummy-page{
+        .dummy-text{
+            font-size: 20px;
+        }
+    }
+}

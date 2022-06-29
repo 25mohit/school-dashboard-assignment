@@ -1,0 +1,188 @@
+.edit-student {
+  position: fixed;
+  background-color: rgba(32, 32, 32, 0.7);
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.edit-student .edit-container {
+  width: 30%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  background-color: white;
+  text-align: left;
+  padding: 20px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.edit-student .edit-container .heading-div {
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 10px;
+}
+
+.edit-student .edit-container .heading-div .add-heading {
+  color: #242424;
+  text-align: left;
+  font-weight: 600;
+}
+
+.edit-student .edit-container .add-student-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.edit-student .edit-container .add-student-form label {
+  text-align: left;
+  color: gray;
+  margin: 10px 0;
+  margin-top: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.edit-student .edit-container .add-student-form .input-field, .edit-student .edit-container .add-student-form .input-field-cls, .edit-student .edit-container .add-student-form .input-field-sco {
+  border: 1px solid #b5b5b5;
+  padding: 7px;
+  border-radius: 8px;
+}
+
+.edit-student .edit-container .add-student-form .error, .edit-student .edit-container .add-student-form .error-class, .edit-student .edit-container .add-student-form .error-score {
+  display: none;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  font-style: italic;
+  margin-top: 4px;
+  padding: 0;
+  color: red;
+}
+
+.edit-student .edit-container .add-student-form .result-status {
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2px 10px;
+}
+
+.edit-student .edit-container .add-student-form #pass {
+  background: #01ba01;
+}
+
+.edit-student .edit-container .add-student-form #failed {
+  background: red;
+}
+
+.edit-student .edit-container .add-student-form #por {
+  color: red;
+}
+
+.edit-student .edit-container .add-student-form #avg {
+  color: #23A4D8;
+}
+
+.edit-student .edit-container .add-student-form #exc {
+  color: #01ba01;
+}
+
+.edit-student .edit-container .add-student-form .grade-text {
+  font-weight: bold;
+}
+
+.edit-student .edit-container .add-student-form .form-footer {
+  text-align: right;
+  border-top: 1px solid #dadada;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.edit-student .edit-container .add-student-form .form-footer button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.edit-student .edit-container .add-student-form .form-footer button:hover {
+  cursor: pointer;
+}
+
+.edit-student .edit-container .add-student-form .form-footer .cancel-bt {
+  border: 2px solid #23A4D8;
+  background-color: white;
+  color: #23A4D8;
+}
+
+.edit-student .edit-container .add-student-form .form-footer .cancel-bt:hover {
+  cursor: pointer;
+  border: 2px solid red;
+  background-color: red;
+  color: white;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.edit-student .edit-container .add-student-form .form-footer .submit-bt {
+  border: 2px solid #23A4D8;
+  background-color: #23A4D8;
+  color: white;
+}
+
+.edit-student .edit-container .add-student-form .form-footer .submit-bt:hover {
+  cursor: pointer;
+  border: 2px solid #23A4D8;
+  background-color: white;
+  color: #23A4D8;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.input-field:invalid[focused="true"], .input-field-cls:invalid[focused="true"], .input-field-sco:invalid[focused="true"] {
+  outline: 1px solid red;
+  border: none;
+}
+
+.input-field:invalid[focused="true"] ~ .error {
+  display: block;
+}
+
+.input-field-cls:invalid[focused="true"] ~ .error-class {
+  display: block;
+}
+
+.input-field-sco:invalid[focused="true"] ~ .error-score {
+  display: block;
+}
+
+@media screen and (max-width: 1150px) {
+  .edit-student .edit-container {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .edit-student .edit-container {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=EditStudent.css.map */

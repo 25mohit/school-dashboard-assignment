@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+  display: flex;
+font-family: 'Montserrat', sans-serif;
+color:#7F878A;
+font-weight: 600;
+}
+.App .sidebar-app{
+    flex: 1;
+    height: 100vh;
+}
+.App .home-app{
+  flex: 4.5;
+}
